@@ -1,0 +1,207 @@
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 400;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 700;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 300;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+.nanumbarungothic * {
+ font-family: 'NanumBarunGothic', sans-serif;
+}
+
+* {margin: 0;padding: 0;}
+
+*{
+  margin:0;
+  padding:0;}
+  
+  a{ text-decoration:none;
+   }
+ ul,ol{list-style: none;}
+
+ body{
+   font-family: " NanumBarunGothic";
+   font-size:15px;
+   line-height:24px;
+
+
+   color:#666;text-align: center;
+   min-width:1350px;}
+
+
+/*header*/
+
+
+#header{height: 80px; width:1320px; margin:0 auto; 
+position: relative;/*로고포지션의 부모
+기준*/ padding: 20px 0;}
+ #header ul{ float: right; padding-top: 20px;}
+ #headercard{ float: left; padding-top: 20px;}
+ .logo{ position: absolute; left: 50%; top: 30px;  transform: translateX(-50%)}/*가로길이의 절반만큼 앞으로 이동*/
+.list1{float: right;}
+ .list1 li{ float: left;padding: 10px; }
+.list1 li a{ font-size: 13px ; color: #666;}
+.mb .swiper-pagination-bullet {
+      background: black;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+    }
+
+
+
+
+#nav{ height: 52px;}
+#navin{ width: 1320px ; margin: 0 auto; }
+
+ #navin>ul>li{ float: left;  padding: 15px 0;  text-align: center; width: 20%; font-size: 18px; font-weight: bold;}
+#navin>ul>li>a{ color: rgb(61, 29, 29);}
+
+.sub li a{display: block; padding: 10px 0; background: rgb(160, 95, 35); color: #fff; font-size: 12px; font-weight: normal; border-top: 1px solid rgba(255,255,255, 0.3); border-bottom:1px solid rgba(0,0,0, 0.3) ;}
+.sub li a:hover{ background: rgb(236, 229, 198); color: rgb(83, 69, 6); transition: all 1s; }
+
+.sub{ position: absolute; top: 52px; left: 0; width: 100%;}
+
+#navin>ul>li{ position: relative; /*서브메뉴포지션기준*/}
+.sub{ opacity: 0; transform: scaleY(0); transform-origin: top; /* 스케일의 기준점 변경 호버가 아니라 서브에 지정해야*/} /*투명도와 스케일속성으로 높이를 0으로 만들어 안보이개 한다*/
+#navin>ul>li:hover>.sub{ opacity: 1; transform: scaleY(1); transition: all 1s;}
+
+
+
+h3{ font-size: 22px; text-align: left;  color: #bb7285;}
+h2{ font-size: 28px; font-weight: bold;  line-height: 45px;}
+h1{ font-size: 35px; font-weight: bold;  text-align:center; padding: 80px 0 30px;}
+  p{ font-size: 14px; padding:20px 0;  text-align: left;  line-height: 25px;}
+
+
+
+ 
+#eventba{margin: 0 auto; width: 1320px; height: 600px; }
+
+.eventbanerin{float: left;}
+.eventbanertext{ float:right; text-align: left; padding: 100px 30px; width:550px ;box-sizing: border-box; background-color: #fbf2ee; height: 400px;}
+
+
+
+
+
+
+#tab_content{  margin: 0 auto; width: 1320px; padding: 100px; height: 1900px;}
+.eventbox{ float: left; padding-right: 20px;  padding-bottom: 50px;}
+.st1{ padding-left: 30px;}
+
+
+ul,
+		ol {
+			list-style: none;
+		}
+
+		a {
+			text-decoration: none;
+			color: #522b19
+      font-size: 20px;
+      font-weight: bold;
+		}
+
+		#wrapper {
+			width: 1320px;
+			margin: auto; text-align: center;
+		}
+
+ .e1 :hover{ }
+
+		/*탭 메뉴 모양*/
+		.tabs li {
+			float: left;
+			font-size: 18px;
+		}
+    .tabs li a{display: block;  font-size: 18px;  background-color:#fbf2ee; color:#744f49;   padding: 10px 0; font-weight: bold; width: 200px;}
+
+
+		.tabs {display: inline-block;
+			height: 28px;
+			margin: 20px 0 50px; 
+		}
+    .border-radius1{ border-radius: 40px 0 0 40px;}
+    .border-radius2{ border-radius: 0 40px 40px 0;}
+		/*메뉴를 눌렀을 적용될 스타일 ㄶ기*/
+		 .tabs li.active a { 
+			
+			
+      color:#fbf2ee; background-color: #744f49; 
+		}
+
+		/* 액티브라는 클래스는 변경하지 마세요. 스타일내용만 수정*/
+
+
+		/*탭 컨텐츠 꾸미기*/
+		.tab_content {
+			
+			padding: 30px 0;
+		}
+
+
+
+
+  
+    #footer_inner{ clear: both;
+      width:1320px;
+      margin:0 auto;
+    }
+    
+    .copyright ul li{
+      float:left;
+      padding-right:10px;
+    }
+    .copyright ul li a{
+      color:#ccc;
+    }
+    .copyright p{
+      padding-top:30px;
+      clear:both;
+      color:#ccc;
+    }
+    
+    .sns li{
+      float:left;
+      padding-left:5px;
+      opacity:0.5;
+    }
+    .sns li:hover{
+      opacity:1;
+      transition:all 0.5s;
+    }
+    
+    .copyright{
+      float:left; padding-top: 20px;
+    }
+    .sns{
+      float:right;
+    }
+    #footer_inner p{ clear: both; text-align: left; color: #aaa; padding: 30px 0;}
+    
+    #footer{ clear: both;
+      background:#522b19;
+      height:100px;
+      padding:30px 0;
+    }
+    

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=1350">
+    <title>부산한과</title>
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="sub3.css">
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" alt="로고">
+            </a>
+        </div>
+
+        <ul class="list1">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">주문조회</a></li>
+            <li><a href="#">장바구니</a></li>
+        </ul>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div id="nav">
+        <div id="navin">
+            <ul>
+                <li><a href="#">부산한과</a>
+                    <ul class="sub">
+                        <li><a href="#"> 한과선물세트 </a></li>
+                        <li><a href="#"> 한과단품 </a></li>
+                        <li><a href="#"> 건강차 </a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="#">쇼핑몰</a>
+                    <ul class="sub">
+                        <li><a href="#"> 회사소개 </a></li>
+                        <li><a href="#"> 한과소개 </a></li>
+                    </ul>
+                </li>
+
+
+
+                <li><a href="#">이벤트</a> </li>
+
+                <li><a href="#"> 체험학습</a>
+                    <ul class="sub">
+                        <li><a href="#">체험학습소개 </a></li>
+                        <li><a href="#"> 체험학습예약하기 </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항 </a></li>
+                        <li><a href="#"> 고객문의 </a></li>
+                        <li><a href="#">오시는 길 </a></li>
+                    </ul>
+        </div>
+    </div>
+
+
+
+<div id="eventba">
+
+    <h1> EVENT</h1>
+    
+    <div class="eventbanerin">
+        <img src="images/sub3main.jpg" alt="이벤트">
+        
+        </div>
+<div class="eventbanertext ">
+
+  <h3>  2022.01.30~</h3>  
+<h2>신규가입 특별혜택 </h2>
+<p>  부산한과 신규 회원으로 가입하시면
+    할인쿠폰+ 이벤트 적립금 등 <br>
+    다양한 혜택을 안내받으실  수 있습니다. </p>
+</div>
+
+</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			//처음들어갔을때 모습 만들기...
+			$(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+			$("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+			$(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+
+			//On Click Event
+			$("ul.tabs li").click(function () {
+
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+				$(".tab_content").hide(); //모든 contents들 숨김
+
+				var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+				/*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+				.find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.
+				아이디 값을 찾아서 넣는거 같다.*/
+				$(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+				return false;
+			});
+
+		});
+	</script>
+
+	<div id="wrapper">
+
+		<!--탭 메뉴 영역 -->
+		<ul class="tabs">
+			<li><a href="#tab1" class="border-radius1">전체</a></li>
+			<li><a href="#tab2">진행중인 이벤트</a></li>
+			<li><a href="#tab3" class="border-radius2"  >종료된 이벤트</a></li>
+			<!--tab1을 누르면 아이디가 tab1인 박스가 밑에 나타나게 된다. 해당 아이디는 변경이 가능하나 해당콘텐츠 박스의 아이디도 같이 변경해야 한다-->
+
+		</ul>
+
+		<!--탭 콘텐츠 영역 -->
+
+		<div class="tab_container">
+
+			<div id="tab1" class="tab_content">
+                
+
+		<div class="eventbox st1">
+    <img src="images/event2.jpg" alt="이벤트" class="e1" >
+    
+    </div>
+    
+    <div class="eventbox">
+        <img src="images/event3.jpg" alt="이벤트"class="e1">
+        
+        </div>
+        
+    <div class="eventbox">
+        <img src="images/event4.jpg" alt="이벤트"class="e1">
+        
+        </div>
+
+        <div class="eventbox st1">
+            <img src="images/event5.jpg" alt="이벤트"class="e1">
+            
+            </div>
+            
+            <div class="eventbox">
+                <img src="images/event6.jpg" alt="이벤트"class="e1">
+                
+                </div>
+                
+
+			</div>
+
+
+			<div id="tab2" class="tab_content">
+		<div class="eventbox st1">
+    <img src="images/event2.jpg" alt="이벤트" class="e1">
+    
+    </div>
+    
+    <div class="eventbox">
+        <img src="images/event3.jpg" alt="이벤트"class="e1">
+        
+        </div>
+        
+    <div class="eventbox">
+        <img src="images/event4.jpg" alt="이벤트"class="e1">
+        
+        </div>
+    
+    </div>
+    
+
+			<div id="tab3" class="tab_content"class="e1">
+				
+
+                <div class="eventbox">
+                    <img src="images/event5.jpg" alt="이벤트"class="e1">
+                    
+                    </div>
+                    
+                    <div class="eventbox">
+                        <img src="images/event6.jpg" alt="이벤트"class="e1">
+                        
+                        </div>
+                        
+
+			</div>
+
+
+
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+<div id="event">
+    
+    
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <!--bg-->
+        <div id="footer_inner">
+            <!--마진오토-->
+            <div class="copyright">
+                <ul>
+                    <li> <a href="#">이용약관</a></li>
+                    <li> <a href="#">개인정보처리방침</a></li>
+                    <li> <a href="#">이메일무단수집거부</a></li>
+                    <li> <a href="#">문의하기</a></li>
+                </ul>
+
+            </div>
+
+
+
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="images/icon_facebook.png" alt="페이스북아이콘"></a></li>
+                    <li><a href="#"><img src="images/icon_twitter.png" alt="트위터아이콘"></a></li>
+                    <li><a href="#"><img src="images/icon_instar.png" alt="인스타 아이콘"></a></li>
+                    <li><a href="#"><img src="images/icon_youtube.png" alt="유튜브 아이콘"></a></li>
+                </ul>
+            </div>
+            <p>
+                부산시 중구 중앙동6가 중앙대로 26 다원 중앙타워10층/대표 : / 전화 : 051-245-1650<br>
+                BUSAN is Registered Trandemark of IP lnc. ⓒ IP lnc. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--3. 필수 옵션을 넣는 script부분을 body가장 끝에 넣어준다.-->
+    <script>
+        var swiper = new Swiper(".mb", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },//화살표를 작동하게 하는 옵션.
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },//도트부분을 작동하게 하는 옵션.
+            //옵션추가시 이걸 지우고 넣어주세요.
+
+            autoplay: {
+                delay: 2000,//몇초뒤에 슬라이드가 넘어갈지 설정. 1000=1초
+            },
+            loop: true,//슬라이드무한반복
+            //옵션추가시 이걸 지우고 넣어주세요.
+        });//mb의 옵션 끝
+
+        var swiper = new Swiper(".sub", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },//화살표를 작동하게 하는 옵션.
+            autoplay: {
+                delay: 3000,//몇초뒤에 슬라이드가 넘어갈지 설정. 1000=1초
+                disableOnInteraction: false,
+            },
+            loop: true,//슬라이드무한반복
+            slidesPerView: 2,
+            spaceBetween: 10,
+            //옵션추가시 이걸 지우고 넣어주세요.
+        });//sub의 옵션 끝
+
+    </script>
+
+
+
+
+</body>
+
+</html>
